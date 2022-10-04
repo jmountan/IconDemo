@@ -29,10 +29,10 @@ Check Our Story images
 Add Todd to cart
     Appstate    Home
     ScrollTo    Todd the Hedgehog
-    CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=Images    filename=ToddCap.png
+    CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=${EXECDIR}/IconDemo/Images    filename=ToddCap.png
 
     log            \n\n\n\n                        level=WARN
-    ${list}=            List Directory                        /tmp/
+    ${list}=            List Directory                        ${EXECDIR}/IconDemo/Images
     Log Variables       level=WARN
     log            \n\n\n\n                        level=WARN
 
