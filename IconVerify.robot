@@ -19,6 +19,7 @@ Check product images
     VerifyIcon          pullover
     VerifyIcon          redshirt
     ScrollTo            All Rights Reserved
+    VerifyIcon          footer
 
 *** Keywords ***
 Login
