@@ -32,7 +32,8 @@ Add Todd to cart
     CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=Images    filename=ToddCap.png
 
     log            \n\n\n\n                        level=WARN
-    List Directory                        /tmp/execution/IconDemo              level=WARN
+    ${list}=            List Directory                        /tmp/execution/IconDemo
+    Log Many            @{list}                        level=WARN
     log            \n\n\n\n                        level=WARN
 
     ClickIcon    todd
