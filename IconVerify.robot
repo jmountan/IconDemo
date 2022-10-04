@@ -1,5 +1,6 @@
 *** Settings ***
 Library       QWeb
+Library       QVision
 Suite Setup    Open Browser     about:blank      chrome
 Suite Teardown    Close Browser
 
@@ -9,7 +10,7 @@ ${BASE_IMAGE_PATH}          ${CURDIR}${/}Images
 *** Test Cases ***
 Check product images
     QWeb.Appstate    Login
-    VerifyIcon       bike-light
+    QVision.VerifyIcon       peek
 
 
 *** Keywords ***
