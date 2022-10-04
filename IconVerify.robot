@@ -7,6 +7,10 @@ Suite Teardown    Close Browser
 Check product images
     Appstate    Home
     VerifyIcon        fur
+    VerifyIcon        cart
+    VerifyIcon        sacha
+    VerifyIcon        bumble
+    VerifyIcon        gerald
 
 *** Keywords ***
 Home
