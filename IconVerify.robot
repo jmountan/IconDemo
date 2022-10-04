@@ -18,3 +18,4 @@ Login
     GoTo                  https://www.saucedemo.com/
     TypeText              Username    standard_user
     TypeText              Password    secret_sauce
+    ClickText             Login
