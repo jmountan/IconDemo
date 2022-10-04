@@ -30,16 +30,13 @@ Add Todd to cart
     Appstate    Home
     ScrollTo    Todd the Hedgehog
     CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=${EXECDIR}/IconDemo/Images    filename=toddcap.png
-
-    log            \n\n\n\n                        level=WARN
-    ${list}=            List Directory                        ${EXECDIR}/IconDemo/Images
-    Log Variables       level=WARN
-    log            \n\n\n\n                        level=WARN
-
     ClickIcon    todd
-    VerifyIcon    toddcap
+    VerifyIcon    todd
     VerifyText    $9.00
     ClickText     Add to cart
+    Home
+    ScrollTo      Todd the Hedgehog
+    VerifyIcon    toddcap
 
 *** Keywords ***
 Home
