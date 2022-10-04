@@ -10,6 +10,7 @@ ${BASE_IMAGE_PATH}          ${CURDIR}${/}Images
 Check product images
     QWeb.Appstate    Login
     
+    VerifyIcon       bike-light
 
 
 *** Keywords ***
