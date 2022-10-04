@@ -6,7 +6,6 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 Check product images
     Appstate    Home
-    #VerifyIcon        fur
     VerifyIcon        cart
     VerifyIcon        sacha
     VerifyIcon        bumble
