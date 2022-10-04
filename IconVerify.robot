@@ -11,7 +11,7 @@ Check product images
     QWeb.Appstate    Login
     VerifyIcon          swaglabs
     VerifyIcon          peek
-    ScrollTo                 All Rights Reserved
+    ScrollTo            All Rights Reserved
     VerifyIcon          Footerbot
 
 
