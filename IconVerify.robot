@@ -34,9 +34,9 @@ Add Todd to cart
     VerifyIcon    todd
     VerifyText    $9.00
     ClickText     Add to cart
-    Home
-    ScrollTo      Todd the Hedgehog
-    VerifyIcon    toddcap
+    # Home
+    # ScrollTo      Todd the Hedgehog
+    # VerifyIcon    toddcap
 
 *** Keywords ***
 Home
