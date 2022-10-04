@@ -12,6 +12,10 @@ Check product images
     QWeb.Appstate    Login
     VerifyIcon          swaglabs
     VerifyIcon          peek
+
+    List Files In Directory    ${CURDIR}
+    List Files In Directory    ${CURDIR}/Images
+
     VerifyIcon          backpack
     ScrollTo            All Rights Reserved
 
