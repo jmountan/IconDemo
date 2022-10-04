@@ -25,6 +25,7 @@ Check Our Story images
 Add Todd to cart
     Appstate    Home
     ScrollTo    Todd the Hedgehog
+    CaptureIcon    //img[@src="/shop/images/products/hog/clay.jpg"]    folder=Images    filename=ToddCap.png
     ClickIcon    todd
     VerifyIcon    todd
     VerifyText    $9.00
