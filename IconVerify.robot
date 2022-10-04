@@ -31,7 +31,7 @@ Add Todd to cart
     ScrollTo    Todd the Hedgehog
     CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=${EXECDIR}/IconDemo/Images    filename=toddcap.png
 
-    Log            \n\n\n                        level=WARN
+    Log            \n\n\nFiles In Images Folder:\n                        level=WARN
     ${list}=       List Directory                ${EXECDIR}/IconDemo/Images
     FOR            ${item}                       IN                        @{list}
         Log        ${item}                       level=WARN
