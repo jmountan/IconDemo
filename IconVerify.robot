@@ -7,7 +7,7 @@ Suite Teardown    Close Browser
 Check product images
     Appstate    Home
     VerifyIcon        cart
-    VerifyIcon        sacha
+    VerifyIcon        sacha.jpeg
     VerifyIcon        bumble
     VerifyIcon        gerald
 
