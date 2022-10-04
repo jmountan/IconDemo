@@ -12,8 +12,7 @@ Check product images
     VerifyIcon          swaglabs
     VerifyIcon          peek
     ScrollTo            All Rights Reserved
-    VerifyIcon          Footerbot
-
+    #VerifyIcon          footer.png
 
 *** Keywords ***
 Login
