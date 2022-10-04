@@ -11,6 +11,7 @@ ${BASE_IMAGE_PATH}          ${CURDIR}${/}Images
 Check product images
     QWeb.Appstate    Login
     QVision.VerifyIcon       /tmp/amble/suite/Images/swaglabs.png
+    QWeb.VerifyIcon          swaglabs
 
 
 *** Keywords ***
