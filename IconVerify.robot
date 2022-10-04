@@ -37,7 +37,7 @@ Add Todd to cart
     log            \n\n\n\n                        level=WARN
 
     ClickIcon    todd
-    VerifyIcon    toddCap
+    VerifyIcon    toddcap
     VerifyText    $9.00
     ClickText     Add to cart
 
