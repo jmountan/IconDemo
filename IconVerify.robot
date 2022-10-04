@@ -10,7 +10,7 @@ ${BASE_IMAGE_PATH}          ${CURDIR}${/}Images
 *** Test Cases ***
 Check product images
     QWeb.Appstate    Login
-    QWeb.VerifyIcon       sauce-backpack
+    QWeb.VerifyIcon       sauce-backpack-1200x1500.34e7aa42.jpg
 
 
 *** Keywords ***
