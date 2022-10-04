@@ -11,8 +11,8 @@ Check product images
     QWeb.Appstate    Login
     VerifyIcon          swaglabs
     VerifyIcon          peek
+    VerifyIcon          backpack
     ScrollTo            All Rights Reserved
-    #VerifyIcon          footer.png
 
 *** Keywords ***
 Login
