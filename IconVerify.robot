@@ -16,6 +16,7 @@ Check product images
 *** Keywords ***
 Login
     [Documentation]       Logs into SauceDemo.com
+    Set Library Search Order    QWeb    QVision
     GoTo                  https://www.saucedemo.com/
     TypeText              Username    standard_user
     TypeText              Password    secret_sauce
