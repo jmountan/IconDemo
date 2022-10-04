@@ -10,7 +10,7 @@ ${BASE_IMAGE_PATH}          ${CURDIR}${/}Images
 *** Test Cases ***
 Check product images
     QWeb.Appstate    Login
-    QVision.VerifyIcon       peek
+    QWeb.VerifyIcon       sauce-backpack
 
 
 *** Keywords ***
