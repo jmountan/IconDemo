@@ -33,7 +33,7 @@ Add Todd to cart
 
     log            \n\n\n\n                        level=WARN
     ${list}=            List Directory                        /tmp/execution/IconDemo
-    Log Many            @{list}                        level=WARN
+    Log Variables       level=WARN
     log            \n\n\n\n                        level=WARN
 
     ClickIcon    todd
