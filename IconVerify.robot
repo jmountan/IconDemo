@@ -13,6 +13,11 @@ Check product images
     VerifyIcon          swaglabs
     VerifyIcon          peek
     VerifyIcon          backpack
+    VerifyIcon          bikelight
+    VerifyIcon          boltshirt
+    VerifyIcon          onsie
+    VerifyIcon          pullover
+    VerifyIcon          redshirt
     ScrollTo            All Rights Reserved
 
 *** Keywords ***
