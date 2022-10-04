@@ -10,8 +10,23 @@ Check product images
     VerifyIcon        sacha
     VerifyIcon        bumble
     VerifyIcon        gerald
+    ScrollTo          Todd the Hedgehog
+    VerifyIcon        todd
+    VerifyIcon        scar
+    VerifyIcon        gavin
+    ScrollTo          Find your spirit animal
+    VerifyText        Find your spirit animal
+
+Check Our Story images
+    Appstate    Our Story
+    VerifyIcon        ava
+    VerifyIcon        steph
 
 *** Keywords ***
 Home
     [Documentation]       Logs into SauceDemo.com
     GoTo                  https://qentinelqi.github.io/shop/
+
+Our Story
+    ${Status}=            IsIcon    sacha
+    IF                    ${status}    ClickText    Our Story
