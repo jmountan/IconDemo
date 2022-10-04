@@ -3,6 +3,9 @@ Library       QWeb
 Suite Setup    Open Browser     about:blank      chrome
 Suite Teardown    Close Browser
 
+*** Variables ***
+${BASE_IMAGE_PATH}          ${CURDIR}${/}Images
+
 *** Test Cases ***
 Check product images
     Appstate    Home
