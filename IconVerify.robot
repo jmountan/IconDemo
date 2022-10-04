@@ -1,5 +1,6 @@
 *** Settings ***
 Library       QWeb
+Library       OperatingSystem
 Suite Setup    Open Browser     about:blank      chrome
 Suite Teardown    Close Browser
 
