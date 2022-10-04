@@ -22,6 +22,14 @@ Check Our Story images
     VerifyIcon        ava
     VerifyIcon        steph
 
+Add Todd to cart
+    Appstate    Home
+    ScrollTo    Todd the Hedgehog
+    ClickIcon    todd
+    VerifyIcon    todd
+    VerifyText    $9.00
+    ClickText     Add to cart
+
 *** Keywords ***
 Home
     [Documentation]       Logs into SauceDemo.com
