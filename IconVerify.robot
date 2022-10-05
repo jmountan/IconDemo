@@ -5,7 +5,7 @@ Suite Setup    Open Browser     about:blank      chrome
 Suite Teardown    Close Browser
 
 *** Variables ***
-${BASE_IMAGE_PATH}          ${CURDIR}${/}Images
+${BASE_IMAGE_PATH}          ${EXECDIR}${/}Images
 
 *** Test Cases ***
 Check product images
