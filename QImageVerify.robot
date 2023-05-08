@@ -1,6 +1,7 @@
 *** Settings ***
 Library       QWeb
 Library       OperatingSystem
+Library       QImage
 Suite Setup    Open Browser     about:blank      chrome
 Suite Teardown    Close Browser
 
@@ -10,10 +11,13 @@ ${BASE_IMAGE_PATH}          ${EXECDIR}${/}Images
 *** Test Cases ***
 Check product images
     Appstate    Home
-    # VerifyIcon        cart
-    # VerifyIcon        sacha
-    # VerifyIcon        bumble
-    # VerifyIcon        gerald
+
+    ${element}=    CaptureIcon    //img[@src\="/shop/images/products/elephant/cream.jpg"]
+    ${md5}=        Get Image md5    ${element}
+
+    CompareImageToMD5               ../QImage/cream.jpg    ${md5}
+    
+
     ScrollTo          Todd the Hedgehog
     # VerifyIcon        todd
     # VerifyIcon        scar
@@ -26,25 +30,6 @@ Check Our Story images
     # VerifyIcon        ava
     # VerifyIcon        steph
 
-Add Todd to cart
-    Appstate    Home
-    ScrollTo    Todd the Hedgehog
-    # CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=${EXECDIR}/IconDemo/Images    filename=toddcap.png
-
-    Log            \n\n\nFiles In Images Folder:\n                        level=WARN
-    ${list}=       List Directory                ${EXECDIR}/IconDemo/Images
-    FOR            ${item}                       IN                        @{list}
-        Log        ${item}                       level=WARN
-    END
-    Log            \n\n\n                        level=WARN
-
-    ClickIcon    todd
-    VerifyIcon    todd
-    VerifyText    $9.00
-    ClickText     Add to cart
-    # Home
-    # ScrollTo      Todd the Hedgehog
-    # VerifyIcon    toddcap
 
 *** Keywords ***
 Home
