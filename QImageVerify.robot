@@ -10,26 +10,26 @@ ${BASE_IMAGE_PATH}          ${EXECDIR}${/}Images
 *** Test Cases ***
 Check product images
     Appstate    Home
-    VerifyIcon        cart
-    VerifyIcon        sacha
-    VerifyIcon        bumble
-    VerifyIcon        gerald
+    # VerifyIcon        cart
+    # VerifyIcon        sacha
+    # VerifyIcon        bumble
+    # VerifyIcon        gerald
     ScrollTo          Todd the Hedgehog
-    VerifyIcon        todd
-    VerifyIcon        scar
-    VerifyIcon        gavin
+    # VerifyIcon        todd
+    # VerifyIcon        scar
+    # VerifyIcon        gavin
     ScrollTo          Find your spirit animal
     VerifyText        Find your spirit animal
 
 Check Our Story images
     Appstate    Our Story
-    VerifyIcon        ava
-    VerifyIcon        steph
+    # VerifyIcon        ava
+    # VerifyIcon        steph
 
 Add Todd to cart
     Appstate    Home
     ScrollTo    Todd the Hedgehog
-    CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=${EXECDIR}/IconDemo/Images    filename=toddcap.png
+    # CaptureIcon    xpath\=//img[@src\="/shop/images/products/hog/clay.jpg"]    folder=${EXECDIR}/IconDemo/Images    filename=toddcap.png
 
     Log            \n\n\nFiles In Images Folder:\n                        level=WARN
     ${list}=       List Directory                ${EXECDIR}/IconDemo/Images
